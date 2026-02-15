@@ -1,0 +1,10 @@
+namespace: global-movers-preprod
+environment: preprod
+
+app:
+  image:
+    tag: dev-latest # Promoted from dev
+  replicas: 1
+
+ingress:
+  host: preprod.global-movers.local

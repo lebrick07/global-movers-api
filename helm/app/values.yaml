@@ -1,0 +1,20 @@
+app:
+  name: global-movers-api
+  image:
+    repository: ghcr.io/lebrick07/global-movers-api
+    tag: latest
+    pullPolicy: IfNotPresent
+  replicas: 1
+  port: 8000
+  service:
+    type: ClusterIP
+    port: 80
+
+ingress:
+  enabled: true
+  className: traefik
+  host: global-movers.local
+
+# Environment-specific values
+namespace: global-movers-dev
+environment: dev

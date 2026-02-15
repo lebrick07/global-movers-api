@@ -1,0 +1,5 @@
+apiVersion: v2
+name: global-movers
+description: Global Movers application
+type: application
+version: 0.1.0
