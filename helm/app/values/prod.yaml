@@ -3,7 +3,7 @@ environment: prod
 
 app:
   image:
-    tag: latest # Production release
+    tag: main-3a7ba96
   replicas: 2  # Higher availability in prod
 
 ingress:
